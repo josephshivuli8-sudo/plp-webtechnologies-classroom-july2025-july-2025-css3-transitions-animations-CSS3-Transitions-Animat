@@ -1,0 +1,64 @@
+// script.js
+// 📚✨ Part 2: JavaScript Functions — Scope, Parameters & Return Values
+
+// Global variable
+const globalMessage = "This is a global message that can be accessed anywhere.";
+
+/**
+ * Demonstrates local vs global scope.
+ * @param {string} localGreeting A parameter that is local to this function.
+ */
+function demonstrateScope(localGreeting) {
+    // This is a local variable, only accessible within this function.
+    const functionMessage = "This is a local message inside the function.";
+
+    console.log("--- Scope Demonstration ---");
+    console.log("Global message:", globalMessage);
+    console.log("Local greeting (from parameter):", localGreeting);
+    console.log("Function-specific message:", functionMessage);
+}
+
+// Call the function with a parameter.
+demonstrateScope("Hello from the outside!");
+
+// This would cause an error because `functionMessage` is not in global scope.
+// console.log(functionMessage);
+
+// A reusable function that takes parameters and returns a value.
+/**
+ * Calculates the total cost with tax.
+ * @param {number} price The base price.
+ * @param {number} taxRate The tax rate (e.g., 0.05 for 5%).
+ * @returns {number} The total cost.
+ */
+function calculateTotal(price, taxRate) {
+    const taxAmount = price * taxRate;
+    const total = price + taxAmount;
+    return total;
+}
+
+const itemPrice = 100;
+const salesTax = 0.08;
+const finalPrice = calculateTotal(itemPrice, salesTax);
+
+console.log("\n--- Calculation Demonstration ---");
+console.log(`The total price for an item costing $${itemPrice} with an ${salesTax * 100}% tax rate is: $${finalPrice}`);
+
+
+// 🎨🎬 Part 3: Combining CSS Animations with JavaScript
+
+// Get references to the DOM elements
+const animateBtn = document.getElementById('trigger-animation-btn');
+const animatedBox = document.getElementById('js-animated-box');
+
+/**
+ * Toggles a CSS class to trigger or reset an animation.
+ * This demonstrates using JavaScript to control CSS.
+ */
+function toggleAnimation() {
+    // .classList.toggle() adds the class if it's not there, and removes it if it is.
+    animatedBox.classList.toggle('animate');
+}
+
+// Add an event listener to the button to call the function on click.
+animateBtn.addEventListener('click', toggleAnimation);

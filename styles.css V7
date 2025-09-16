@@ -1,0 +1,74 @@
+/* styles.css */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #5a5a5a;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 🎨✨ Part 1: CSS Transitions & Animations */
+.css-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.interactive-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+    border-radius: 8px;
+}
+
+.interactive-box:hover {
+    background-color: #e74c3c;
+    transform: rotate(45deg) scale(1.2);
+}
+
+.css-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.css-button:hover {
+    transform: translateY(-5px);
+}
+
+/* 🎨🎬 Part 3: JavaScript Triggered Animation Classes */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12;
+    border-radius: 8px;
+    transition: transform 1s ease-in-out, background-color 1s ease-in-out;
+}
+
+/* This class is added by JavaScript */
+.animate {
+    transform: translateX(200px) rotate(360deg) scale(1.5);
+    background-color: #34495e;
+}

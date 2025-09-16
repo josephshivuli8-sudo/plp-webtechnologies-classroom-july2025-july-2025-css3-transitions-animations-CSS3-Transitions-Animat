@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Interactive Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Experience</h1>
+    </header>
+
+    <section>
+        <h2>🎨 Part 1: CSS Animations & Transitions</h2>
+        <div class="css-container">
+            <div class="interactive-box"></div>
+            <button class="css-button">Hover Over Me!</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>📚 Part 2: JavaScript Functions</h2>
+        <p>Check the console (F12) to see the output of our functions demonstrating scope, parameters, and return values.</p>
+        <button id="calc-button">Calculate Something</button>
+    </section>
+
+    <section>
+        <h2>🎬 Part 3: Combining CSS & JS</h2>
+        <p>Click the button below to trigger a CSS animation using JavaScript.</p>
+        <div class="js-container">
+            <button id="trigger-animation-btn">Animate the Box!</button>
+            <div id="js-animated-box" class="animated-box"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
